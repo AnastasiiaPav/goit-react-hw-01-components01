@@ -23,6 +23,13 @@ export const MoneySet = ({ items }) => {
     </Table>
   )
 };
+
+MoneySet.propTypes = {
+id: propTypes.number, 
+type: propTypes.string , 
+amount: propTypes.number,
+currency: propTypes.string,
+}
 // export const Money = ({ MoneyDetails }) => {
 //     return(
 //         <Table>

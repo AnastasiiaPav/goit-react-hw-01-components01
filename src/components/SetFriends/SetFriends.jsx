@@ -16,3 +16,7 @@ export const SetFriends = ({ friends }) => {
         </FriendList>
     )
 }
+
+SetFriends.propTypes= {
+    friends: propTypes.array
+}
