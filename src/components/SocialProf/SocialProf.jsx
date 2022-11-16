@@ -1,8 +1,8 @@
 import propTypes from 'prop-types'
 
-const User = ({ username, tag, location, avatar, followers, views, likes }) => {
+export const User = ({ username, tag, location, avatar, followers, views, likes }) => {
     return (
-        <div class="profile">
+        <div className="profile">
             <div class="description">
                 <img
                     src={avatar}
