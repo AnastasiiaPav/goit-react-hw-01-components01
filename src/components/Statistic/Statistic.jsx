@@ -1,5 +1,5 @@
 import propTypes from 'prop-types';
-import { Statis, Statisticli, StatisticSet } from './Statistic.styled';
+import { Statis, Statisticli, StatisticSet, Percentage } from './Statistic.styled';
 
 export const Statistic = ({ stats, title}) => {
     return(
@@ -9,7 +9,7 @@ export const Statistic = ({ stats, title}) => {
                 {stats.map(({id, label, percentage}) =>
                 <Statisticli key={id}>
             <span className="label">{label}</span>
-             <span className="percentage">{percentage}%</span>
+             <Percentage>{percentage}%</Percentage>
                 </Statisticli> )}
              </StatisticSet>
         </Statis>

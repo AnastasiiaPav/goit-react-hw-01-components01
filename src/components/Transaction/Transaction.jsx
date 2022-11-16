@@ -1,5 +1,5 @@
 import propTypes from 'prop-types';
-import { Table } from './Transaction.styled';
+import { Table, Td } from './Transaction.styled';
 
 export const MoneySet = ({ items }) => {
   return (
@@ -14,9 +14,9 @@ export const MoneySet = ({ items }) => {
       <tbody>
         {items.map(({ id, type, amount, currency }) => (
              <tr key={id}>
-                   <td>{type}</td>
-                  <td>{amount}</td>
-                  <td>{currency}</td>
+                   <Td>{type}</Td>
+                  <Td>{amount}</Td>
+                  <Td>{currency}</Td>
                 </tr>
         ))}
       </tbody>

@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Profile = styled.div`
     display: flex;
     justify-content: center;
-    width: 200px;
+    width: 350px;
     flex-wrap: wrap;
     border: solid 1px black;
 `
@@ -15,4 +15,10 @@ export const Profile = styled.div`
  export const UserName = styled.p`
     font-weight: 500;
     font-size: 24px;
+ `
+
+ export const Emoji = styled.ul`
+    width: 150px;
+    height: 100px;
+    margin-top: 5px;
  `

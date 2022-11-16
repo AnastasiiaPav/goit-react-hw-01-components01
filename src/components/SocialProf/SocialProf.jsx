@@ -1,5 +1,5 @@
 import propTypes from 'prop-types'
-import { Profile, Photo, UserName } from './SocialProf.styled';
+import { Profile, Photo, UserName,  Emoji } from './SocialProf.styled';
 
 export const User = ({ username, tag, location, avatar, followers, views, likes }) => {
     return (
@@ -16,20 +16,20 @@ export const User = ({ username, tag, location, avatar, followers, views, likes 
                 <p className={location}>🌐{location}</p>
             </div>
 
-            <ul className="stats">
+            <Emoji>
                 <li>
-                    <span className={followers}>Followers 👯‍♀️{followers}</span>
+                    <span className={followers}>Followers 👯‍♀️: {followers}</span>
                     <span className="quantity"></span>
                 </li>
                 <li>
-                    <span className={views}>Views 👁‍🗨 {views}</span>
+                    <span className={views}>Views 👁‍🗨:  {views}</span>
                     <span className="quantity"></span>
                 </li>
                 <li>
-                    <span className={likes}>Likes 🖤{likes}</span>
+                    <span className={likes}>Likes 🖤:  {likes}</span>
                     <span className="quantity"></span>
                 </li>
-            </ul>
+            </Emoji>
         </Profile>
     );
 };
