@@ -21,7 +21,7 @@ export const MoneySet = ({ items }) => {
         ))}
       </tbody>
     </Table>
-  );
+  )
 };
 
 // export const Money = ({ MoneyDetails }) => {
