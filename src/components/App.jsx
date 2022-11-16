@@ -1,8 +1,12 @@
 import { User } from './SocialProf/SocialProf';
 import { Statistic } from './Statistic/Statistic';
+import { SetFriends } from './SetFriends/SetFriends';
+import { MoneySet  } from './Transaction/Transaction'
 
 import user from 'user.json';
 import data from 'data.json';
+import friends from 'friends.json';
+import transactions from 'transactions.json';
 
 
 export const App = () => {
@@ -18,6 +22,9 @@ export const App = () => {
       likes={user.stats.likes}
     /> 
     <Statistic title="Upload stats" stats={data} />
+    <SetFriends 
+   friends={friends} />
+  <MoneySet items={transactions} />;
     </>
   );
 };
