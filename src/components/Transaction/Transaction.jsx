@@ -23,7 +23,6 @@ export const MoneySet = ({ items }) => {
     </Table>
   )
 };
-
 // export const Money = ({ MoneyDetails }) => {
 //     return(
 //         <Table>
