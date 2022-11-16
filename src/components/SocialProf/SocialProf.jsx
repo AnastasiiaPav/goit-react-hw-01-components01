@@ -1,34 +1,36 @@
 import propTypes from 'prop-types'
+import { Profile, Photo, UserName } from './SocialProf.styled';
 
 export const User = ({ username, tag, location, avatar, followers, views, likes }) => {
     return (
-        <div className="profile">
-            <div class="description">
-                <img
+        <Profile>
+            <div className="description">
+                <Photo
                     src={avatar}
                     alt="User avatar"
-                    class="avatar"
+                    className="avatar"
+                    width="100"
                 />
-                <p class={username}></p>
-                <p class={tag}></p>
-                <p class={location}></p>
+                <UserName>{username}</UserName>
+                <p className={tag}>🐶{tag}</p>
+                <p className={location}>🌐{location}</p>
             </div>
 
-            <ul class="stats">
+            <ul className="stats">
                 <li>
-                    <span class={followers}>Followers 👯‍♀️</span>
-                    <span class="quantity"></span>
+                    <span className={followers}>Followers 👯‍♀️{followers}</span>
+                    <span className="quantity"></span>
                 </li>
                 <li>
-                    <span class={views}>Views 👁‍🗨</span>
-                    <span class="quantity"></span>
+                    <span className={views}>Views 👁‍🗨 {views}</span>
+                    <span className="quantity"></span>
                 </li>
                 <li>
-                    <span class={likes}>Likes 🖤</span>
-                    <span class="quantity"></span>
+                    <span className={likes}>Likes 🖤{likes}</span>
+                    <span className="quantity"></span>
                 </li>
             </ul>
-        </div>
+        </Profile>
     );
 };
 
